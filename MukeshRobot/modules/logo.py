@@ -10,6 +10,11 @@ from MukeshRobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT, telethn
 from MukeshRobot.events import register
 
 LOGO_LINKS = [
+    "https://graph.org/file/38300ed55effdfc804657.jpg", 
+    "https://graph.org/file/bda79dc85eb73cc38fa10.jpg", 
+    "https://graph.org/file/8d358bf23c152f72b5c7c.jpg", 
+    "https://graph.org/file/ee2c11954dc00a0f4dc1e.jpg", 
+    "https://graph.org/file/348972742d68a9a548a28.jpg", 
     "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
     "https://telegra.ph/file/c1ff2d5ec5e1b5bd1b200.jpg",
     "https://telegra.ph/file/08c5fbe14cc4b13d1de05.jpg",
@@ -279,7 +284,7 @@ async def lego(event):
         await telethn.send_file(
             event.chat_id,
             file=fname,
-            caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ @{BOT_USERNAME}"
+            caption=f"ᒪOᘜO ᘜᗴᑎᗴᖇᗩTᗴᗪ ᗷY @{BOT_USERNAME}"
 )
         await pesan.delete()
         if os.path.exists(fname):

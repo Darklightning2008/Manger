@@ -220,7 +220,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.5)
             lol.edit_text("⚡⚡")
             time.sleep(0.3)
-            lol.edit_text(𝕂𝕒𝕜𝕒𝕤𝕙𝕚 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘.....")
+            lol.edit_text("𝕂𝕒𝕜𝕒𝕤𝕙𝕚 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘.....")
             time.sleep(0.4)
             lol.delete()
             

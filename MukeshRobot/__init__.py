@@ -6,6 +6,7 @@ import ast
 import base64
 
 import telegram.ext as tg
+from httpx import ClientSession
 from pyrogram import Client, errors
 from telethon import TelegramClient
 
@@ -155,7 +156,7 @@ telethn = TelegramClient("mukesh", API_ID, API_HASH)
 
 pbot = Client("MukeshRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
-aiohttpsession = ClientSession()
+httpx = ClientSession()
 
 print("[INFO]: Getting Bot Info...")
 BOT_ID = dispatcher.bot.id

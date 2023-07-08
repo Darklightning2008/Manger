@@ -6,6 +6,7 @@ import ast
 import base64
 
 import telegram.ext as tg
+from  aiohttp import ClientSession 
 from pyrogram import Client, errors
 from telethon import TelegramClient
 

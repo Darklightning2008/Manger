@@ -25,7 +25,7 @@ async def get_couple(chat_id: int, date: str):
     if date in lovers:
         return lovers[date]
     else:
-        return False
+        return couples
 
 
 async def save_couple(chat_id: int, date: str, couple: dict):

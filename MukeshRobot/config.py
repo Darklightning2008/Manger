@@ -9,14 +9,14 @@ class Config(object):
     TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1929914544 # If you dont know, run the bot and do /id in your private chat with it, also an integer
     
-    SUPPORT_CHAT = "the_support_chat"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = "LovelyXSupport"  # Your own group for support, do not add the @
     START_IMG = "https://te.legra.ph/file/59d555afd67ff0d9bd224.mp4"
     EVENT_LOGS = ()  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     MONGO_DB_URI= ""
     # RECOMMENDED
     DATABASE_URL = ""  # A sql database url from elephantsql.com
     CASH_API_KEY = (
-        "D0ZCZ67KL8OTL0PY"  # Get your API key from https://www.alphavantage.co/support/#api-key
+        "NGJS76JQ28V2LRPF"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
     TIME_API_KEY = "5LB4TAKPEKZ0"  # Get your API key from https://timezonedb.com/api
 

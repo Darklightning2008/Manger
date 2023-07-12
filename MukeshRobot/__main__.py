@@ -74,7 +74,6 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEX = """
 ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
 """
-PM_START_IMG = https://te.legra.ph/file/d2951c574094ff75f8f97.png"
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} , ⚡⚡

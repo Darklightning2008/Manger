@@ -130,7 +130,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         bot.send_chat_action(chat_id, action="typing")
         request = requests.get(
-            f"curl -X GET "https://api.safone.me/chatbot?query=BQC7TLphtvuX9WP_yfOl4Z6PPN4RrxHUPcZtNo31qzWlHLCZvGUcgq6YFqCb66Sqr6B9bZhsSHwU0pScJ1CI6lRDAlh1Le3vZwRz03kg9HOvz3_oBtCeZ6CEpPcJrfSEfjMEpwHs5L6q_7_PSLv377mJ5DW0B5jop664J4dTi1AAcVk0PnUFUDmyRD8oKhwNeyuzMVJqAjhSPkkdLDy-pszVUOtOvh26BBjJitziRxMhI5lJKSYBzp4PLTolMFFTYR-zaBz0t5Kx-sHBqI2TodqBH7yzvZjEVUpNHhprUvg63ebT-BDab8pmYPL0rkoZS7bdcgg9FPjbh5xDQ0-iio6PcwgosAA&user_id=1929914544&bot_name=Kakashi%20Hatake&bot_master=Speedy" -H "accept: application/json")
+            f"curl -X GET "https://api.safone.me/chatbot?query=&user_id=1929914544&bot_name=Kakashi%20Hatake&bot_master=Speedy" -H "accept: application/json")
         results = json.loads(request.text)
         sleep(0.5)
         message.reply_text(results["response"])

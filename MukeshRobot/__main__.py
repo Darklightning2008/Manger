@@ -77,22 +77,29 @@ PM_START_TEX = """
 
 
 PM_START_TEXT = """ 
-*ʜᴇʏ* {} , 🥀
-*๏ ɪ'ᴍ {} ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!
-ʜɪᴛ ʜᴇʟᴘ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ɪɴ ᴍʏ ғᴜʟʟ ᴘᴏᴛᴇɴᴛɪᴀʟ!*
-➻ *ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ  ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.*
+*ʜᴇʏ* {} , ⚡⚡
+*𝐈 𝐚𝐦 𝐊𝐚𝐤𝐚𝐬𝐡𝐢 𝐇𝐚𝐭𝐚𝐤𝐞, 𝐓𝐡𝐞 𝐩𝐨𝐰𝐞𝐫𝐟𝐮𝐥
+𝐧𝐢𝐧𝐣𝐚 𝐭𝐨 𝐦𝐚𝐧𝐚𝐠𝐞 𝐚𝐧𝐝 𝐬𝐚𝐯𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐟𝐫𝐨𝐦 𝐞𝐧𝐞𝐦𝐢𝐞𝐬. 
+𝐈 𝐚𝐦 𝐛𝐚𝐬𝐞𝐝 𝐨𝐧 𝐚𝐧 𝐚𝐧𝐢𝐦𝐞 𝐜𝐚𝐥𝐥𝐞𝐝 𝗡𝗮𝗿𝘂𝘁𝗼
+𝐈 𝐡𝐚𝐯𝐞 𝐩𝐨𝐰𝐞𝐫 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮 𝐦𝐮𝐬𝐢𝐜 𝐚𝐥𝐬𝐨
+𝐈 𝐡𝐚𝐯𝐞 𝐬𝐨𝐦𝐞 𝐚𝐰𝐞𝐬𝐨𝐦𝐞 𝐚𝐧𝐝 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬..*
 ─────────────────
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
+START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
 """
 
 buttons = [
     [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
+        
         InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
+       
+        InlineKeyboardButton(text="💳", callback_data="source_"), 
+        
         InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
+        
         InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
      ],
     [

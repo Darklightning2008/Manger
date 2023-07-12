@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEX = """
 ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
 """
-
+PM_START_IMG = https://te.legra.ph/file/d2951c574094ff75f8f97.png"
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} , ⚡⚡
@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             
             x=update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAI33mLYLNLilbRI-sKAAob0P7koTEJNAAIOBAACl42QVKnra4sdzC_uKQQ")
+                "https://te.legra.ph/file/d2951c574094ff75f8f97.png")
             x.delete()
             usr = update.effective_user
             lol = update.effective_message.reply_text(

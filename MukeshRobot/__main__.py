@@ -238,8 +238,7 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
-    PM_START_IMAGE = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
- 
+    
     else:
         update.effective_message.reply_photo(
             START_IMG,
@@ -248,6 +247,8 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
         )
+
+PM_START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
 
 
 def error_handler(update, context):

@@ -87,6 +87,7 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
+START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
 
 buttons = [
     [

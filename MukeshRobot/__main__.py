@@ -213,13 +213,13 @@ def start(update: Update, context: CallbackContext):
 
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
-
+        
         else:
             first_name = update.effective_user.first_name
             
             x=update.effective_message.reply_sticker(
                 "CAACAgUAAx0CbwIllwACEJ5kr0YJWY_uAmvwaONJjNPD5CsJSwACIwkAAuWAeVVBWKnc-78Dky8E")
-            x.delete()
+        
             usr = update.effective_user
             lol = update.effective_message.reply_text(
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
@@ -238,6 +238,8 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
+    PM_START_IMAGE = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
+"
     else:
         update.effective_message.reply_photo(
             START_IMG,

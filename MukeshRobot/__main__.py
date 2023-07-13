@@ -77,11 +77,11 @@ PM_START_TEX = """
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} , ⚡⚡
-*𝐈 𝐚𝐦 𝐊𝐚𝐤𝐚𝐬𝐡𝐢 𝐇𝐚𝐭𝐚𝐤𝐞, 𝐓𝐡𝐞 𝐩𝐨𝐰𝐞𝐫𝐟𝐮𝐥
-𝐧𝐢𝐧𝐣𝐚 𝐭𝐨 𝐦𝐚𝐧𝐚𝐠𝐞 𝐚𝐧𝐝 𝐬𝐚𝐯𝐞 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩 𝐟𝐫𝐨𝐦 𝐞𝐧𝐞𝐦𝐢𝐞𝐬. 
-𝐈 𝐚𝐦 𝐛𝐚𝐬𝐞𝐝 𝐨𝐧 𝐚𝐧 𝐚𝐧𝐢𝐦𝐞 𝐜𝐚𝐥𝐥𝐞𝐝 𝗡𝗮𝗿𝘂𝘁𝗼
-𝐈 𝐡𝐚𝐯𝐞 𝐩𝐨𝐰𝐞𝐫 𝐭𝐨 𝐠𝐞𝐭 𝐲𝐨𝐮 𝐦𝐮𝐬𝐢𝐜 𝐚𝐥𝐬𝐨
-𝐈 𝐡𝐚𝐯𝐞 𝐬𝐨𝐦𝐞 𝐚𝐰𝐞𝐬𝐨𝐦𝐞 𝐚𝐧𝐝 𝐮𝐬𝐞𝐟𝐮𝐥 𝐟𝐞𝐚𝐭𝐮𝐫𝐞𝐬..*
+*I ᴀᴍ {}, Tʜᴇ ᴘᴏᴡᴇʀғᴜʟ
+ɴɪɴɪᴀ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ sᴀᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ғʀᴏᴍ ᴇɴᴇᴍɪᴇs. 
+I ᴀᴍ ʙᴀsᴇᴅ ᴏɴ ᴀɴ ᴀɴɪᴍᴇ ᴄᴀʟʟᴇᴅ Nᴀʀᴜᴛᴏ
+I ʜᴀᴠᴇ ᴘᴏᴡᴇʀ ᴛᴏ ɢᴇᴛ ʏᴏᴜ ᴍᴜsɪᴄ ᴀʟsᴏ
+I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.*
 ─────────────────
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             
             x=update.effective_message.reply_sticker(
-                "https://te.legra.ph/file/d2951c574094ff75f8f97.png")
+                "CAACAgUAAx0CbwIllwACEJ5kr0YJWY_uAmvwaONJjNPD5CsJSwACIwkAAuWAeVVBWKnc-78Dky8E")
             x.delete()
             usr = update.effective_user
             lol = update.effective_message.reply_text(
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             lol.edit_text("⚡⚡")
             time.sleep(0.3)
             lol.edit_text("𝕂𝕒𝕜𝕒𝕤𝕙𝕚 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘.....")
-            time.sleep(0.4)
+            time.sleep(0.6)
             lol.delete()
             
             update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),

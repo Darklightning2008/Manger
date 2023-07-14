@@ -16,6 +16,7 @@ WELCOME_IMAGES = [
     "https://te.legra.ph/file/419819936577d40057c65.jpg"
     "https://te.legra.ph/file/5434534309983f539b1b8.jpg"
     "https://te.legra.ph/file/d5bf6eb6e7713a828e961.gif"
+]
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",
     "Ready player {first}",

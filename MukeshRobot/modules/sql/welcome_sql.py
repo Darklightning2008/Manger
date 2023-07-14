@@ -10,6 +10,12 @@ from MukeshRobot.modules.sql import BASE, SESSION
 DEFAULT_WELCOME = "Hey {first}, how are you?"
 DEFAULT_GOODBYE = "Nice knowing ya!"
 
+WELCOME_IMAGES = [
+    "https://te.legra.ph/file/f9552b037bfd59aa7b63b.jpg"
+    "https://te.legra.ph/file/3af9d9aa2a35056563203.jpg"
+    "https://te.legra.ph/file/419819936577d40057c65.jpg"
+    "https://te.legra.ph/file/5434534309983f539b1b8.jpg"
+    "https://te.legra.ph/file/d5bf6eb6e7713a828e961.gif"
 DEFAULT_WELCOME_MESSAGES = [
     "{first} is here!",
     "Ready player {first}",

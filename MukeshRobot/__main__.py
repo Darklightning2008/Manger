@@ -90,8 +90,8 @@ START_IMG[]
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
-update.effective_message.reply_photo(
-    START_IMG)
+def.update.effective_message.reply_photo(
+START_IMG)
 START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
 
 buttons = [

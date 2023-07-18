@@ -89,9 +89,7 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
-if 
-START_PIC:       
- await message.reply_photo(START_IMG,)
+
 START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
 
 buttons = [
@@ -237,7 +235,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.6)
             lol.delete()
             
-            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats()),
+            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME,sql.num_users(),sql.num_chats(),PM_START_IMG),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,

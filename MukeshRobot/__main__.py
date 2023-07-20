@@ -79,7 +79,7 @@ PM_START_IMG = [
 
 PM_START_TEXT = """ 
 
-{PM_START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"}
+
 *ʜᴇʏ* {} , ⚡⚡
 *I ᴀᴍ {}, Tʜᴇ ᴘᴏᴡᴇʀғᴜʟ
 ɴɪɴɪᴀ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ sᴀᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ғʀᴏᴍ ᴇɴᴇᴍɪᴇs. 

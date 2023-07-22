@@ -607,7 +607,6 @@ Wᴀʀɴ Mᴀɴᴀɢᴇᴍᴇɴᴛ
             ),
             )
             
-                 [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
         InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
         InlineKeyboardButton(text="🕹️", url=f"tg://user?id={OWNER_ID}"),

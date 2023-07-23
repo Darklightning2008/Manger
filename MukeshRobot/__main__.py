@@ -90,7 +90,9 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
-
+first_name = update.effective_user.first_name
+           update.effective_message.reply_photo(" https://te.legra.ph/file/0c9ee29971329071bf38a.jpg") 
+        reply_markup=InlineKeyboardMarkup(buttons),
             
 buttons = [
     [
@@ -218,8 +220,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
            
-            update.effective_message.reply_photo(" https://te.legra.ph/file/0c9ee29971329071bf38a.jpg") 
-        reply_markup=InlineKeyboardMarkup(buttons),
+            
             
             x=update.effective_message.reply_sticker(
                 "CAACAgUAAx0CbwIllwACEJ5kr0YJWY_uAmvwaONJjNPD5CsJSwACIwkAAuWAeVVBWKnc-78Dky8E")

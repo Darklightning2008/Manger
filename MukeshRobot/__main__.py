@@ -619,27 +619,25 @@ def Music_about_callback(update: Update, context: CallbackContext):
     if query.data == "Music_":
         query.message.edit_text(f"""
  ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ ᴍᴜꜱɪᴄ 
-""",)
-
-    
-      [          
+""",), 
+      [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
         InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
         InlineKeyboardButton(text="🕹️", url=f"tg://user?id={OWNER_ID}"),
         InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-      ]
+      ],          
+                   
                        [
                         InlineKeyboardButton(text="⍟ ᴀᴅᴍɪɴ ⍟", callback_data="Music_admin"), 
                         
-                        InlineKeyboardButton(text="⍟ ᴘʟᴀʏ ⍟", callback_data="Music_play"), 
-                       ] 
-                    
-                    
+                        InlineKeyboardButton(text="⍟ ᴘʟᴀʏ ⍟", callback_data="Music_play"),
+                       ], 
+                    [
                         InlineKeyboardButton(text="⍟ ʙᴏᴛ ⍟", callback_data="Music_bot"),
                         InlineKeyboardButton(
                             text="⍟ ᴇxᴛʀᴀ ⍟",
                             callback_data="Music_extra",
-                        ),
+                        ),], 
                     
                     [
                         InlineKeyboardButton(text="• ʙᴀᴄᴋ •", callback_data="Main_help")

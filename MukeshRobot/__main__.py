@@ -77,7 +77,6 @@ PM_START_TEX = """
 
 PM_START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
  
-await message.reply_photo("https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"), 
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} ,
@@ -92,6 +91,8 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
 ─────────────────
 """
 
+update.effective_message.reply_photo(" https://te.legra.ph/file/0c9ee29971329071bf38a.jpg") 
+            
 buttons = [
     [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
@@ -221,6 +222,7 @@ def start(update: Update, context: CallbackContext):
             x=update.effective_message.reply_sticker(
                 "CAACAgUAAx0CbwIllwACEJ5kr0YJWY_uAmvwaONJjNPD5CsJSwACIwkAAuWAeVVBWKnc-78Dky8E")
         
+            
             usr = update.effective_user
             lol = update.effective_message.reply_text(
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
@@ -248,6 +250,8 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
         )
+
+
 
 PM_START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
 

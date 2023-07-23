@@ -1076,7 +1076,6 @@ def main():
     dispatcher.add_handler(donate_handler)
     dispatcher.add_handler(mukeshrobot_main_handler)
     dispatcher.add_error_handler(error_callback)
-    dispatcher.add_handler(source_callback_handler)
     LOGGER.info("Using long polling.")
     updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)
 

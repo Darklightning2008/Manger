@@ -90,8 +90,7 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
-reply_photo(" https://te.legra.ph/file/0c9ee29971329071bf38a.jpg") 
-       
+
             
 buttons = [
     [

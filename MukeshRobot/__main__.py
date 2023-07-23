@@ -76,6 +76,8 @@ PM_START_TEX = """
 """
 
 PM_START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
+ 
+await message.reply_photo("https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"), 
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} ,

@@ -217,12 +217,13 @@ def start(update: Update, context: CallbackContext):
         
         else:
             first_name = update.effective_user.first_name
+           
+            update.effective_message.reply_photo(" https://te.legra.ph/file/0c9ee29971329071bf38a.jpg") 
+        reply_markup=InlineKeyboardMarkup(buttons),
             
             x=update.effective_message.reply_sticker(
                 "CAACAgUAAx0CbwIllwACEJ5kr0YJWY_uAmvwaONJjNPD5CsJSwACIwkAAuWAeVVBWKnc-78Dky8E")
-        update.effective_message.reply_photo(" https://te.legra.ph/file/0c9ee29971329071bf38a.jpg") 
-        reply_markup=InlineKeyboardMarkup(buttons),
-            
+        
             
             usr = update.effective_user
             lol = update.effective_message.reply_text(

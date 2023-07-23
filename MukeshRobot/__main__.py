@@ -222,8 +222,7 @@ def start(update: Update, context: CallbackContext):
                 "CAACAgUAAx0CbwIllwACEJ5kr0YJWY_uAmvwaONJjNPD5CsJSwACIwkAAuWAeVVBWKnc-78Dky8E")
         update.effective_message.reply_photo(" https://te.legra.ph/file/0c9ee29971329071bf38a.jpg") 
         reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
+            
             
             usr = update.effective_user
             lol = update.effective_message.reply_text(

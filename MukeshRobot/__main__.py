@@ -90,11 +90,9 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
 ─────────────────
 """
 
-        update.effective_message.reply_photo(
-            START_IMG,
-            ),
-            parse_mode=ParseMode.HTML,
-        
+       def start(update, context):
+    update.message.reply_photo({START_IMG)
+ 
 buttons = [
     [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),

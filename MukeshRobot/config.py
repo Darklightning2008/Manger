@@ -11,6 +11,7 @@ class Config(object):
     
     SUPPORT_CHAT = "LovelyXSupport"  # Your own group for support, do not add the @
     START_IMG = "https://te.legra.ph/file/59d555afd67ff0d9bd224.mp4"
+    PM_IMG = ""
     EVENT_LOGS = ()  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     MONGO_DB_URI= ""
     # RECOMMENDED

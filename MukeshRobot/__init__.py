@@ -50,6 +50,7 @@ if ENV:
     START_IMG = os.environ.get(
         "START_IMG", ""
     )
+    PM_IMG = os.environ.get("PM_IMG", None)
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "worldwide_friend_zone")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
@@ -104,6 +105,7 @@ else:
     MONGO_DB_URI = Config.MONGO_DB_URI
     NO_LOAD = Config.NO_LOAD
     START_IMG = Config.START_IMG
+    PM_IMG = Config.PM_IMG
     STRICT_GBAN = Config.STRICT_GBAN
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     TEMP_DOWNLOAD_DIRECTORY = Config.TEMP_DOWNLOAD_DIRECTORY

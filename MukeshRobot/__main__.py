@@ -238,7 +238,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.6)
             lol.delete()
             
-            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), PM_IMG, BOT_NAME,sql.num_users(),sql.num_chats(),START_IMG),
+            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME, PM_IMG, sql.num_users(), sql.num_chats(), START_IMG),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,

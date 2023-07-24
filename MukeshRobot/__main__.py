@@ -75,8 +75,7 @@ PM_START_TEX = """
 ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
 """
 
-PM_START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
- dispatcher.bot.send_photo({START_IMG}), 
+ 
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} ,
@@ -90,14 +89,15 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
-
+dispatcher.bot.send_photo({START_IMG})
             
 buttons = [
     [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-    
+
+     
+        InlineKeyboardButton(text="🛡Info", callback_data="mukesh_"),
+      
         
         InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
         

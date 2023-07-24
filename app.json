@@ -62,6 +62,11 @@
          "required": true,
          "value": "https://te.legra.ph/file/49c43e6fc856534a09853.jpg"
       },
+      "PM_IMG": {
+         "description": "Telegraph link of the image which will be shown at start command in pm.",
+         "required": true,
+         "value": ""
+      },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - The_support_chat.",
          "required": true,

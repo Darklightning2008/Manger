@@ -76,7 +76,7 @@ PM_START_TEX = """
 """
 
 PM_START_IMG = "https://te.legra.ph/file/0c9ee29971329071bf38a.jpg"
- 
+ dispatcher.bot.send_photo({START_IMG}), 
 
 PM_START_TEXT = """ 
 *ʜᴇʏ* {} ,

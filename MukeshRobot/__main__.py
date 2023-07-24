@@ -90,7 +90,7 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
 ─────────────────
 """
 
-       def start(update, context):
+       def start(update, START_IMG):
     update.message.reply_photo({START_IMG)
  
 buttons = [

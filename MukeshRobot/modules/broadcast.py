@@ -1,3 +1,22 @@
+#ᴀᴅᴅ ʟɪᴄᴇɴsᴇ ᴛᴇxᴛ ʜᴇʀᴇ ɢᴇᴛ ɪᴛ ғʀᴏᴍ ʙᴇʟᴏᴡ.
+
+from MukeshRobot import pbot as mukesh # This is bot's client
+from pyrogram import filters # pyrogram filters
+
+
+
+#ғᴏʀ /help ᴍᴇɴᴜ
+__mod_name__ = "Broadcast"
+__help__ = "Broadcast"
+
+
+@mukesh.on_message(filters.command("start"))
+async def some_function(_, message):
+    await message.reply_text("ɪ'ᴍ.ᴀʟɪᴠᴇ ʙᴀʙʏ❣️!!")
+
+# ᴍᴀɴʏ ᴜsᴇғᴜʟ ғᴜɴᴄᴛɪᴏɴs ᴀʀᴇ ɪɴ, MukeshRobot/utils/,MukeshRobot, and MukeshRobot/modules/
+
+
 import logging
 from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext

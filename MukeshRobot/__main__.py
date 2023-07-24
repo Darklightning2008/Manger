@@ -89,12 +89,7 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
 """
-update.effective_message.reply_text(START_IMG),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-            )
-else:
+
         update.effective_message.reply_photo(
             START_IMG,
             ),

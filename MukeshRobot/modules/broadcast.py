@@ -6,15 +6,6 @@ from pyrogram import filters # pyrogram filters
 
 
 
-
-
-@mukesh.on_message(filters.command("start"))
-async def some_function(_, message):
-    await message.reply_text("ɪ'ᴍ.ᴀʟɪᴠᴇ ʙᴀʙʏ❣️!!")
-
-# ᴍᴀɴʏ ᴜsᴇғᴜʟ ғᴜɴᴄᴛɪᴏɴs ᴀʀᴇ ɪɴ, MukeshRobot/utils/,MukeshRobot, and MukeshRobot/modules/
-
-
 import logging
 from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext

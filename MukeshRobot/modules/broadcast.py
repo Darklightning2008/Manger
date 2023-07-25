@@ -3,9 +3,9 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-import DazaiRobot.modules.sql.users_sql as sql
-from DazaiRobot import DEV_USERS, OWNER_ID, pbot as pgram
-from DazaiRobot.modules.sql.users_sql import get_all_users
+import MukeshRobot.modules.sql.users_sql as sql
+from MukeshRobot import DEV_USERS, OWNER_ID, pbot as pgram
+from MukeshRobot.modules.sql.users_sql import get_all_users
 
 #Broadcast Function
 @pgram.on_message(filters.command("broadcast"))

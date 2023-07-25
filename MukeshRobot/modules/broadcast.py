@@ -5,9 +5,7 @@ from pyrogram import filters # pyrogram filters
 
 
 
-#ғᴏʀ /help ᴍᴇɴᴜ
-__mod_name__ = "Broadcast"
-__help__ = "Broadcast"
+
 
 
 @mukesh.on_message(filters.command("start"))
@@ -22,7 +20,7 @@ from telegram import Update, ParseMode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 # Replace 'YOUR_BOT_TOKEN' with the token you obtained from BotFather
-bot_token = '{BOT_TOKEN}'
+bot_token = '6287631826:AAHkjzI_RV4qf1S9NYgFb5MCyVx-2hZ0S-0'
 
 # Define a list to store authorized admin user IDs
 authorized_admins = [1929914544]  # Replace with actual user IDs of authorized admins
@@ -77,3 +75,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    #ғᴏʀ /help ᴍᴇɴᴜ
+__mod_name__ = "Broadcast"
+__help__ = "Broadcast"

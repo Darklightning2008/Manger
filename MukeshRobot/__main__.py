@@ -94,24 +94,24 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
  
 buttons = [
     [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-
-     
-        InlineKeyboardButton(text="🛡Info", callback_data="mukesh_"),
-      
-        
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
+        InlineKeyboardButton(text="😒𝔹𝕒𝕔𝕜😒", callback_data="mukesh_back"),
+    ], 
+     [
+        InlineKeyboardButton(text="👾𝕀𝕟𝕗𝕠👾", callback_data="mukesh_"),
+     ], 
+     [   
+        InlineKeyboardButton(text="🤝𝕆𝕨𝕟𝕖𝕣🤝", url=f"tg://user?id={OWNER_ID}"),
+     ],  
+        InlineKeyboardButton(text="😝ℂ𝕙𝕒𝕜𝕣𝕒😝", callback_data="Main_help"),
      ],
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ",
+            text="😍𝕾𝖚𝖒𝖒𝖔𝖓 𝕸𝖊😍",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
+        InlineKeyboardButton(text="👺𝑪𝒉𝒂𝒌𝒓𝒂𝒔🈴", callback_data="Main_help"),
     ],
     
 
@@ -399,11 +399,16 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
-     ],
+        
+                        InlineKeyboardButton(text="😒𝔹𝕒𝕔𝕜😒", callback_data="mukesh_back"),
+                    ], 
+                    [
+                        InlineKeyboardButton(text="👾𝕀𝕟𝕗𝕠👾", callback_data="mukesh_"),
+                    ], 
+                        InlineKeyboardButton(text="🤝𝕆𝕨𝕟𝕖𝕣🤝", url=f"tg://user?id={OWNER_ID}"),
+                    [
+                        InlineKeyboardButton(text="😝ℂ𝕙𝕒𝕜𝕣𝕒😝", callback_data="Main_help"),
+     ],             ], 
                     [
                         InlineKeyboardButton(
                             text="🚩sᴜᴩᴩᴏʀᴛ", callback_data="LovelyXSupport"

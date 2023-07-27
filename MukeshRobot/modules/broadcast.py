@@ -38,11 +38,11 @@ async def broadcast_cmd(client: Client, message: Message):
     chats = sql.get_all_chats() or []
     users = get_all_users()
 
-    if "everyone" in texttt:
+    if "-all" in texttt:
         texttt.append("-user")
         texttt.append("-group")
 
-    if "user" in texttt:
+    if "-user" in texttt:
         for chat in users:
             if message.reply_to_message:
                 msg = message.reply_to_message
@@ -59,7 +59,7 @@ async def broadcast_cmd(client: Client, message: Message):
             except Exception:
                 uerror += 1
                 await asyncio.sleep(0.3)
-    if "group" in texttt:
+    if "-group" in texttt:
         for chat in chats:
             if message.reply_to_message:
                 msg = message.reply_to_message

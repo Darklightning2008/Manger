@@ -430,7 +430,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
                     ],
-                ]
+                
             ),
         
     elif query.data == "mukesh_support":

@@ -15,13 +15,13 @@ async def broadcast_cmd(client: Client, message: Message):
 
     if user_id not in [OWNER_ID] + DEV_USERS:
         await message.reply_text(
-            "You are not authorized to use this command. Only the owner and authorized users can use it."
+            "丂ㄖ尺尺ㄚ 爪ㄚ 千尺|乇几ᗪ.𝙾𝚗𝚕𝚢 𝚖𝚢 𝚘𝚠𝚗𝚎𝚛 𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚎𝚛𝚜 𝚌𝚊𝚗 𝚎𝚡𝚎𝚌𝚞𝚝𝚎 𝚝𝚑𝚒𝚜"
         )
         return
 
     if len(texttt) < 2:
         return await message.reply_text(
-            "<b>BROADCASTING COMMANDS</b>\n-user : broadcasting all user's DM\n-group : broadcasting all groups\n-all : broadcasting both\nEx: /broadcast-user"
+            "<b>BROADCASTING COMMANDS</b>\n-user : broadcasting all user's DM\ngroup : broadcasting all groups\n everyone : broadcasting both\nEx: /broadcastuser or /broadcasteveryone"
         )
 
     if message.reply_to_message is None and not get_arg(message):
@@ -29,7 +29,7 @@ async def broadcast_cmd(client: Client, message: Message):
             "<b>Please provide a message or reply to a message</b>"
         )
 
-    tex = await message.reply_text("<code>Starting global broadcast...</code>")
+    tex = await message.reply_text("<code>Starting  broadcast...</code>")
 
     usersss = 0
     chatttt = 0
@@ -38,11 +38,11 @@ async def broadcast_cmd(client: Client, message: Message):
     chats = sql.get_all_chats() or []
     users = get_all_users()
 
-    if "-all" in texttt:
+    if "everyone" in texttt:
         texttt.append("-user")
         texttt.append("-group")
 
-    if "-user" in texttt:
+    if "user" in texttt:
         for chat in users:
             if message.reply_to_message:
                 msg = message.reply_to_message
@@ -59,7 +59,7 @@ async def broadcast_cmd(client: Client, message: Message):
             except Exception:
                 uerror += 1
                 await asyncio.sleep(0.3)
-    if "-group" in texttt:
+    if "group" in texttt:
         for chat in chats:
             if message.reply_to_message:
                 msg = message.reply_to_message

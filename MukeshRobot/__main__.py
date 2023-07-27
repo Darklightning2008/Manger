@@ -166,10 +166,10 @@ for module_name in ALL_MODULES:
         DATA_EXPORT.append(imported_module)
 
     if hasattr(imported_module, "__chat_settings__"):
-        CHAT_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+        CHAT_SETTINGS[imported_module.__mod_name__.lower()] == imported_module
 
     if hasattr(imported_module, "__user_settings__"):
-        USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+        USER_SETTINGS[imported_module.__mod_name__.lower()] == imported_module
 
 
 # do not async

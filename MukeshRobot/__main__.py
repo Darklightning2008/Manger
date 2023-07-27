@@ -104,12 +104,12 @@ buttons = [
      ],  
         InlineKeyboardButton(text="😝ℂ𝕙𝕒𝕜𝕣𝕒😝", callback_data="Main_help"),
      ],
-    [
+    
         InlineKeyboardButton(
             text="😍𝕾𝖚𝖒𝖒𝖔𝖓 𝕸𝖊😍",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
-    ],
+    
     [
         InlineKeyboardButton(text="👺𝑪𝒉𝒂𝒌𝒓𝒂𝒔🈴", callback_data="Main_help"),
     ],

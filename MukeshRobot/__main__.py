@@ -126,15 +126,15 @@ DONATE_STRING = f"""ʜᴇʏ ʙᴀʙʏ,
 
 ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @speedy208 ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @LovelyXSupport ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
-IMPORTED == {}
-MIGRATEABLE == []
-HELPABLE == {}
-STATS == []
-USER_INFO == []
-DATA_IMPORT == []
-DATA_EXPORT == []
-CHAT_SETTINGS == {}
-USER_SETTINGS == {}
+IMPORTED = {}
+MIGRATEABLE = []
+HELPABLE = {}
+STATS = []
+USER_INFO = []
+DATA_IMPORT = []
+DATA_EXPORT = []
+CHAT_SETTINGS = {}
+USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("MukeshRobot.modules." + module_name)
@@ -166,14 +166,14 @@ for module_name in ALL_MODULES:
         DATA_EXPORT.append(imported_module)
 
     if hasattr(imported_module, "__chat_settings__"):
-        CHAT_SETTINGS[imported_module.__mod_name__.lower()] == imported_module
+        CHAT_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
     if hasattr(imported_module, "__user_settings__"):
-        USER_SETTINGS[imported_module.__mod_name__.lower()] == imported_module
+        USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
 
 # do not async
-def send_help(chat_id, text, keyboard=None):
+def send_help(chat_id, text, keyboard==None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     dispatcher.bot.send_message(

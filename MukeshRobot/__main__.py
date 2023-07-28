@@ -126,15 +126,15 @@ DONATE_STRING = f"""ʜᴇʏ ʙᴀʙʏ,
 
 ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ @speedy208 ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ @LovelyXSupport ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
-IMPORTED = {}
-MIGRATEABLE = []
-HELPABLE = {}
-STATS = []
-USER_INFO = []
-DATA_IMPORT = []
-DATA_EXPORT = []
-CHAT_SETTINGS = {}
-USER_SETTINGS = {}
+IMPORTED == {}
+MIGRATEABLE == []
+HELPABLE == {}
+STATS == []
+USER_INFO == []
+DATA_IMPORT == []
+DATA_EXPORT == []
+CHAT_SETTINGS == {}
+USER_SETTINGS == {}
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("MukeshRobot.modules." + module_name)

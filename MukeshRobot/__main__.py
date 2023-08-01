@@ -93,9 +93,8 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
 
  
 buttons = [
-    [
+    
         InlineKeyboardButton(text="😒𝔹𝕒𝕔𝕜😒", callback_data="mukesh_back"),
-    ], 
      [
         InlineKeyboardButton(text="👾𝕀𝕟𝕗𝕠👾", callback_data="mukesh_"),
      ], 
@@ -118,7 +117,7 @@ buttons = [
 
 
 
-HELP_STRINGS == f"""
+HELP_STRINGS = f"""
 » *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*"""
 
 DONATE_STRING = f"""ʜᴇʏ ʙᴀʙʏ,

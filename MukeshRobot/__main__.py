@@ -115,7 +115,7 @@ buttons = [
     ],
     
 
-IMPORTED = {}
+IMPORTED := {}
 MIGRATEABLE = []
 HELPABLE = {}
 STATS = []

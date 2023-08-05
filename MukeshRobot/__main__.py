@@ -93,14 +93,14 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
 
  
 buttons = [
-    
+    [
         InlineKeyboardButton(text="😒𝔹𝕒𝕔𝕜😒", callback_data="mukesh_back"),
      
         InlineKeyboardButton(text="👾𝕀𝕟𝕗𝕠👾", callback_data="mukesh_"),
      ], 
-  [ 
+  
         InlineKeyboardButton(text="🤝𝕆𝕨𝕟𝕖𝕣🤝", url=f"tg://user?id={OWNER_ID}")
-  ], 
+   
      [
         InlineKeyboardButton(text="😝ℂ𝕙𝕒𝕜𝕣𝕒😝", callback_data="Main_help"),
      

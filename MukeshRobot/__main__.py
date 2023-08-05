@@ -98,7 +98,7 @@ buttons = [
      
         InlineKeyboardButton(text="👾𝕀𝕟𝕗𝕠👾", callback_data="mukesh_"),
      ], 
-  
+    [
         InlineKeyboardButton(text="🤝𝕆𝕨𝕟𝕖𝕣🤝", url=f"tg://user?id={OWNER_ID}")
    
      
@@ -109,10 +109,10 @@ buttons = [
             text="😍𝕾𝖚𝖒𝖒𝖔𝖓 𝕸𝖊😍",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
-], 
-    [
+
+    
         InlineKeyboardButton(text="👺𝑪𝒉𝒂𝒌𝒓𝒂𝒔🈴", callback_data="Main_help"),
-    ],
+    ] 
   
 
 

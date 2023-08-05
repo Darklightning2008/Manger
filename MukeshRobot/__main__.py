@@ -100,8 +100,9 @@ buttons = [
      ], 
     [
         InlineKeyboardButton(text="🤝𝕆𝕨𝕟𝕖𝕣🤝", url=f"tg://user?id={OWNER_ID}")
+    ], 
    
-     
+     [
         InlineKeyboardButton(text="😝ℂ𝕙𝕒𝕜𝕣𝕒😝", callback_data="Main_help"),
      
      ], 

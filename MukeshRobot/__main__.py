@@ -113,8 +113,18 @@ buttons = [
     [
         InlineKeyboardButton(text="👺𝑪𝒉𝒂𝒌𝒓𝒂𝒔🈴", callback_data="Main_help"),
     ],
-    
+  
 
+
+IMPORTED = {}
+MIGRATEABLE = []
+HELPABLE = {}
+STATS = []
+USER_INFO = []
+DATA_IMPORT = []
+DATA_EXPORT = []
+CHAT_SETTINGS = {}
+USER_SETTINGS = {}
 
 
 for module_name in ALL_MODULES:

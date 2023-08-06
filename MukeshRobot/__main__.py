@@ -94,23 +94,18 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
  
 buttons = [
     [
-        InlineKeyboardButton(text="😒𝔹𝕒𝕔𝕜😒", callback_data="mukesh_back"),
-     
-        InlineKeyboardButton(text="👾𝕀𝕟𝕗𝕠👾", callback_data="mukesh_"),
-     ], 
-   
-     [
-        InlineKeyboardButton(text="😝ℂ𝕙𝕒𝕜𝕣𝕒😝", callback_data="Main_help"),
-     
+        InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="Iɴғᴏ", callback_data="mukesh_"),
+        InlineKeyboardButton(text="Cʜᴀᴋʀᴀs", callback_data="Main_help"),
      ], 
     [
         InlineKeyboardButton(
-            text="😍𝕾𝖚𝖒𝖒𝖔𝖓 𝕸𝖊😍",
+            text="Sᴜᴍᴍᴏɴ ᴍᴇ",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ], 
    [ 
-        InlineKeyboardButton(text="👺𝑪𝒉𝒂𝒌𝒓𝒂𝒔🈴", callback_data="Main_help"),
+        InlineKeyboardButton(text="Cʜᴀᴋʀᴀs", callback_data="Main_help"),
     ], 
 ], 
 

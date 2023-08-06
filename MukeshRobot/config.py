@@ -23,6 +23,7 @@ class Config(object):
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.
+    CHATBOT_API = "1929914544-fallen-brff33ffrb"
     DRAGONS = []  # User id of sudo users
     DEV_USERS = []  # User id of dev users
     DEMONS = []  # User id of support users

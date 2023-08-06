@@ -111,6 +111,22 @@ buttons = [
 
 HELP_STRINGS = f"""
 » *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*"""
+buttons = [
+    [
+        InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="Iɴғᴏ", callback_data="mukesh_"),
+        InlineKeyboardButton(text="Cʜᴀᴋʀᴀs", callback_data="Main_help"),
+     ], 
+    [
+        InlineKeyboardButton(
+            text="Sᴜᴍᴍᴏɴ ᴍᴇ",
+            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
+        ),
+    ], 
+   [ 
+        InlineKeyboardButton(text="Cʜᴀᴋʀᴀs", callback_data="Main_help"),
+    ], 
+], 
 
 IMPORTED = {}
 MIGRATEABLE = []

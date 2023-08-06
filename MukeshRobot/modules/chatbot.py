@@ -1,67 +1,163 @@
-import telegram
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler
-import os
-import openai
+import html
+import json
+import re
+from time import sleep
+import requests
+from telegram import (
+    CallbackQuery,
+    Chat,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    ParseMode,
+    Update,
+    User,
+)
+from telegram.ext import (
+    CallbackContext,
+    CallbackQueryHandler,
+    CommandHandler,
+    Filters,
+    MessageHandler,
+)
+from telegram.utils.helpers import mention_html
 
-# Set your ChatGPT API key here
-openai.api_key = "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"
+import MukeshRobot.modules.sql.chatbot_sql as sql
+from MukeshRobot import BOT_ID, BOT_NAME, BOT_USERNAME, dispatcher,CHATBOT_API
+from MukeshRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from MukeshRobot.modules.log_channel import gloggable
 
-# Set your Telegram bot token here
-TELEGRAM_BOT_TOKEN = "6287631826:AAHkjzI_RV4qf1S9NYgFb5MCyVx-2hZ0S-0"
 
-# Define states for the conversation handler
-START, CHAT = range(2)
+@user_admin_no_reply
+@gloggable
+def mukeshrm(update: Update, context: CallbackContext) -> str:
+    query: Optional[CallbackQuery] = update.callback_query
+    user: Optional[User] = update.effective_user
+    match = re.match(r"rm_chat\((.+?)\)", query.data)
+    if match:
+        user_id = match.group(1)
+        chat: Optional[Chat] = update.effective_chat
+        is_mukesh = sql.set_mukesh(chat.id)
+        if is_mukesh:
+            is_mukesh = sql.set_mukesh(user_id)
+            return (
+                f"<b>{html.escape(chat.title)}:</b>\n"
+                f"ᴀɪ ᴅɪꜱᴀʙʟᴇᴅ\n"
+                f"<b>ᴀᴅᴍɪɴ :</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            )
+        else:
+            update.effective_message.edit_text(
+                "{} ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ {}.".format(
+                    dispatcher.bot.first_name, mention_html(user.id, user.first_name)
+                ),
+                parse_mode=ParseMode.HTML,
+            )
 
-# Callback function for the /start command
-def start(update, context):
-    update.message.reply_text("Hello! I'm your chatbot. Send /chat to start a conversation.")
-    return CHAT
+    return ""
 
-# Callback function to handle user messages
-def chat(update, context):
-    user_message = update.message.text
-    chat_history = context.user_data.get("chat_history", [])
-    
-    # Add user message to the chat history
-    chat_history.append(f"User: {user_message}")
-    
-    # Generate a response using ChatGPT
-    response = openai.Completion.create(
-        engine="davinci-codex",
-        prompt="\n".join(chat_history),
-        temperature=0.7,
-        max_tokens=50
+
+@user_admin_no_reply
+@gloggable
+def mukeshadd(update: Update, context: CallbackContext) -> str:
+    query: Optional[CallbackQuery] = update.callback_query
+    user: Optional[User] = update.effective_user
+    match = re.match(r"add_chat\((.+?)\)", query.data)
+    if match:
+        user_id = match.group(1)
+        chat: Optional[Chat] = update.effective_chat
+        is_mukesh = sql.rem_mukesh(chat.id)
+        if is_mukesh:
+            is_mukesh = sql.rem_mukesh(user_id)
+            return (
+                f"<b>{html.escape(chat.title)}:</b>\n"
+                f"ᴀɪ ᴇɴᴀʙʟᴇ\n"
+                f"<b>ᴀᴅᴍɪɴ :</b> {mention_html(user.id, html.escape(user.first_name))}\n"
+            )
+        else:
+            update.effective_message.edit_text(
+                "{} ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ {}.".format(
+                    dispatcher.bot.first_name, mention_html(user.id, user.first_name)
+                ),
+                parse_mode=ParseMode.HTML,
+            )
+
+    return ""
+
+
+@user_admin
+@gloggable
+def mukesh(update: Update, context: CallbackContext):
+    message = update.effective_message
+    msg = "• ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ"
+    keyboard = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data="add_chat({})"),
+                InlineKeyboardButton(text="ᴅɪsᴀʙʟᴇ", callback_data="rm_chat({})"),
+            ],
+        ]
     )
-    
-    # Add the AI response to the chat history
-    ai_response = response.choices[0].text.strip()
-    chat_history.append(f"AI: {ai_response}")
-    
-    # Store the updated chat history in user data
-    context.user_data["chat_history"] = chat_history
-    
-    # Send AI response to the user
-    update.message.reply_text(ai_response)
-    
-    return CHAT
-
-# Main function to run the bot
-def main():
-    updater = Updater(token=TELEGRAM_BOT_TOKEN, use_context=True)
-    dp = updater.dispatcher
-    
-    conv_handler = ConversationHandler(
-        entry_points=[CommandHandler('start', start)],
-        states={
-            CHAT: [MessageHandler(Filters.text & ~Filters.command, chat)]
-        },
-        fallbacks=[]
+    message.reply_text(
+        text=msg,
+        reply_markup=keyboard,
+        parse_mode=ParseMode.HTML,
     )
-    
-    dp.add_handler(conv_handler)
-    
-    updater.start_polling()
-    updater.idle()
 
-if __name__ == '__main__':
-    main()
+
+def mukesh_message(context: CallbackContext, message):
+    reply_message = message.reply_to_message
+    if message.text.lower() == "mukesh":
+        return True
+    elif BOT_USERNAME in message.text.upper():
+        return True
+    elif reply_message:
+        if reply_message.from_user.id == BOT_ID:
+            return True
+    else:
+        return False
+
+
+def chatbot(update: Update, context: CallbackContext):
+    message = update.effective_message
+    chat_id = update.effective_chat.id
+    bot = context.bot
+    is_mukesh = sql.is_mukesh(chat_id)
+    if is_mukesh:
+        return
+
+    if message.text and not message.document:
+        if not mukesh_message(context, message):
+            return
+        bot.send_chat_action(chat_id, action="typing")
+        url=f"https://fallenxbot.vercel.app/api/apikey={CHATBOT_API}/Kakshi-Hatake/Speedy/message={message.text}"
+        response = requests.get(url)
+        out=response.json()
+        reply=out["reply"]
+        message.reply_text(reply)
+
+
+
+
+
+
+
+CHATBOTK_HANDLER = CommandHandler("chatbot", mukesh, run_async=True)
+ADD_CHAT_HANDLER = CallbackQueryHandler(mukeshadd, pattern=r"add_chat", run_async=True)
+RM_CHAT_HANDLER = CallbackQueryHandler(mukeshrm, pattern=r"rm_chat", run_async=True)
+CHATBOT_HANDLER = MessageHandler(
+    Filters.text
+    & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!") & ~Filters.regex(r"^\/")),
+    chatbot,
+    run_async=True,
+)
+
+dispatcher.add_handler(ADD_CHAT_HANDLER)
+dispatcher.add_handler(CHATBOTK_HANDLER)
+dispatcher.add_handler(RM_CHAT_HANDLER)
+dispatcher.add_handler(CHATBOT_HANDLER)
+
+__handlers__ = [
+    ADD_CHAT_HANDLER,
+    CHATBOTK_HANDLER,
+    RM_CHAT_HANDLER,
+    CHATBOT_HANDLER,
+        ]

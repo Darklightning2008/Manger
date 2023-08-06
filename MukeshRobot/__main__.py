@@ -72,6 +72,7 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
+    
 PM_START_TEX = """
 ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
 """
@@ -242,7 +243,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.6)
             lol.delete()
             
-            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), PM_IMG, sql.num_users(), sql.num_chats(), START_IMG),
+            update.effective_message.reply_text(PM_START_TEXT.format(escape_markdown(first_name), PM_IMG, sql.num_users(), sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,

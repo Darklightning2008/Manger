@@ -8,7 +8,7 @@ class Config(object):
     API_HASH = ""
     TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1929914544 # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    
+    CHATBOT_API ="1929914544-fallen-brff33ffrb"
     SUPPORT_CHAT = "LovelyXSupport"  # Your own group for support, do not add the @
     START_IMG = "https://te.legra.ph/file/59d555afd67ff0d9bd224.mp4"
     PM_IMG = ""

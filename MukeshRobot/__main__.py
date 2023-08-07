@@ -95,9 +95,9 @@ I ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛ
  
 buttons = [
     [
-        InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="Iɴғᴏ", callback_data="mukesh_"),
-        InlineKeyboardButton(text="Cʜᴀᴋʀᴀs", callback_data="Main_help"),
+        InlineKeyboardButton(text="🔙", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="📳🆔", callback_data="mukesh_"),
+        InlineKeyboardButton(text="❤", callback_data="Main_help"),
      ], 
     [
         InlineKeyboardButton(
@@ -111,23 +111,9 @@ buttons = [
 ], 
 
 HELP_STRINGS = f"""
-» *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*"""
-buttons = [
-    [
-        InlineKeyboardButton(text="Bᴀᴄᴋ", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="Iɴғᴏ", callback_data="mukesh_"),
-        InlineKeyboardButton(text="Cʜᴀᴋʀᴀs", callback_data="Main_help"),
-     ], 
-    [
-        InlineKeyboardButton(
-            text="Sᴜᴍᴍᴏɴ ᴍᴇ",
-            url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
-        ),
-    ], 
-   [ 
-        InlineKeyboardButton(text="Cʜᴀᴋʀᴀs", callback_data="Main_help"),
-    ], 
-], 
+» *{BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ*
+Well do you need help then press /start ❤❤❤‍🔥"""
+
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -227,7 +213,7 @@ def start(update: Update, context: CallbackContext):
             
             
             x=update.effective_message.reply_sticker(
-                "CAACAgUAAx0CbwIllwACEJ5kr0YJWY_uAmvwaONJjNPD5CsJSwACIwkAAuWAeVVBWKnc-78Dky8E")
+                "")
         
             
             usr = update.effective_user

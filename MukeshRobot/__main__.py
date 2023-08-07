@@ -213,7 +213,7 @@ def start(update: Update, context: CallbackContext):
             
             
             x=update.effective_message.reply_sticker(
-                "")
+                "CAACAgUAAx0CbwIllwACIghk0PfS92WaCw-AZx8s5KRnN6U7JgACYw0AAov1iVZkcC3hOIHM_DAE")
         
             
             usr = update.effective_user

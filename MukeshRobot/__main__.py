@@ -91,13 +91,12 @@ buttons = [
     [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
         InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
         InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
         InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
      ],
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ",
+            text="𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲 🥷",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],

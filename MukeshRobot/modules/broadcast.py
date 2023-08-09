@@ -21,7 +21,7 @@ async def broadcast_cmd(client: Client, message: Message):
 
     if len(texttt) < 2:
         return await message.reply_text(
-            "<b>BROADCASTING COMMANDS</b>\n-user : broadcasting all user's DM\ngroup : broadcasting all groups\n everyone : broadcasting both\nEx: /broadcastuser or /broadcasteveryone"
+            "<b>BROADCASTING COMMANDS</b>\n-user : broadcasting all user's DM\n-group : broadcasting all groups\n-all : broadcasting both\nEx: /broadcast-user"
         )
 
     if message.reply_to_message is None and not get_arg(message):
@@ -29,7 +29,7 @@ async def broadcast_cmd(client: Client, message: Message):
             "<b>Please provide a message or reply to a message</b>"
         )
 
-    tex = await message.reply_text("<code>Starting  broadcast...</code>")
+    tex = await message.reply_text("<code>Starting  broadcast😍...</code>")
 
     usersss = 0
     chatttt = 0

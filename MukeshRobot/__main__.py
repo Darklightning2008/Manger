@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(text="😒𝗕𝗮𝗰𝗸😒", callback_data="mukesh_back"),
         InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
         InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="👾🤖", callback_data="Main_help"),
+        InlineKeyboardButton(text="👾𝗶𝗻𝗳𝗼🤖", callback_data="Main_help"),
      ],
     [
         InlineKeyboardButton(
@@ -379,7 +379,6 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
         InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
         InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
         InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
      ],
@@ -396,7 +395,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                             text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="🥀sᴏᴜʀᴄᴇ",
+                            text="🥀Lol",
                             callback_data="source_",
                         ),
                     ],
@@ -414,8 +413,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                 [
                     [
         InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💳", callback_data="source_"),
+        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"), 
         InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
         InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
      ],

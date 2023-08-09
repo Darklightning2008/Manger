@@ -89,10 +89,10 @@ I ᴀᴍ ʙᴀsᴇᴅ ᴏɴ ᴀɴ ᴀɴɪᴍᴇ ᴄᴀʟʟᴇᴅ Nᴀʀᴜᴛᴏ
 
 buttons = [
     [
-        InlineKeyboardButton(text="🏡", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="🛡️", callback_data="mukesh_"),
-        InlineKeyboardButton(text="🧑‍💻", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="🖥️", callback_data="Main_help"),
+        InlineKeyboardButton(text="😒𝗕𝗮𝗰𝗸😒", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
+        InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="👾🤖", callback_data="Main_help"),
      ],
     [
         InlineKeyboardButton(
@@ -101,7 +101,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="📚 ʜᴇʟᴘ ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"),
+        InlineKeyboardButton(text="👺𝗖𝗵𝗮𝗸𝗿𝗮𝘀🈴", callback_data="Main_help"),
     ],
     
 

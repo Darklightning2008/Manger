@@ -80,8 +80,9 @@ PM_START_TEXT = """
 *ʜᴇʏ* {} ,[⚡]({}) 
 **I ᴀᴍ{}, Tʜᴇ ᴘᴏᴡᴇʀғᴜʟ ʙᴏᴛ
 ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ sᴀᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ғʀᴏᴍ ᴇɴᴇᴍɪᴇs. 
-I ᴀᴍ ʙᴀsᴇᴅ ᴏɴ ᴀɴ ᴀɴɪᴍᴇ ᴄᴀʟʟᴇᴅ Nᴀʀᴜᴛᴏ
+I ᴀᴍ ʙᴀsᴇᴅ ᴏɴ ᴀɴ ᴀɴɪᴍᴇ ᴄᴀʟʟᴇᴅ Nᴀʀᴜᴛᴏ.I ʜᴀᴠᴇ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴛᴏ sᴀᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴍʏ ᴄʜᴀᴋʀᴀ
 ─────────────────
+   *ᴜᴩᴛɪᴍᴇ  »* {uptime}
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
 ─────────────────
@@ -1050,8 +1051,8 @@ def main():
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲 🥷",
-                            url="https://t.me/{dispatcher.bot.username}?startgroup=true"
+                            text=" 🥷 𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲 🥷",
+                            url="https://t.me/Kakashi_Hatakes_bot?startgroup=true"
                             )
                        ]
                 ]

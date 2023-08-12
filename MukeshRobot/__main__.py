@@ -211,11 +211,11 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("😍Hi")
+            lol.edit_text("😘")
             time.sleep(0.5)
-            lol.edit_text("⚡Hello")
+            lol.edit_text("😜")
             time.sleep(0.3)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
+            lol.edit_text("I am ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.4)
             lol.delete()
             

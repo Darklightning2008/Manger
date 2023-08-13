@@ -91,6 +91,7 @@ buttons = [
     [
         InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
         InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton( text="🏡𝗩𝗶𝗹𝗹𝗮𝗴𝗲🏡 ", url=f"https://t.me/{SUPPORT_CHAT}"),
      ],
     [
         InlineKeyboardButton(

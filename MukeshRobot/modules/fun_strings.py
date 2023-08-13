@@ -327,6 +327,7 @@ TOSS = ("Heads", "Tails")
 
 EIGHTBALL = [
     "🟢 As I see it, yes.",
+    "🟢 The starts tell yes", 
     "🟡 Ask again later.",
     "🟡 Better not tell you now.",
     "🟡 Cannot predict now.",
@@ -340,12 +341,15 @@ EIGHTBALL = [
     "🔴 Outlook not so good.",
     "🟢 Outlook good.",
     "🟡 Reply hazy, try again.",
+    "🔴 The stars say no", 
     "🟢 Signs point to yes.",
     "🔴 Very doubtful.",
     "🟢 Without a doubt.",
     "🟢 Yes.",
     "🟢 Yes – definitely.",
     "🟢 You may rely on it.",
+    "🟡 Not good try again", 
+
 ]
 
 DECIDE = ("Yes.", "No.", "Maybe.")

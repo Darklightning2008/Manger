@@ -95,7 +95,7 @@ def hpmanager(user):
     # new_hp -= no_by_per(total_hp, 2 * len(fbanlist))
 
     # Bad status effects:
-    # gbanned users will always have 5% HP from max HP
+   # gbaned users will always have 5% HP from max HP
     # Example: If HP is 100 but gbanned
     # Available HP is 5% of 100 = 5HP
 
@@ -111,7 +111,7 @@ def hpmanager(user):
 
 def make_bar(per):
     done = min(round(per / 10), 10)
-    return "■" * done + "□" * (10 - done)
+    return "✦" * done + "✧" * (10 - done)
 
 
 def get_id(update: Update, context: CallbackContext):

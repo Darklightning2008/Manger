@@ -232,7 +232,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>ᴇxᴛʀᴀᴄᴛɪɴɢ ɪɴғᴏʀᴍᴀᴛɪᴏɴ...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code> Cᴏʟʟᴇᴄᴛɪɴɢ Iɴғᴏ...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"ㅤ ㅤㅤ      ✦ ᴜsᴇʀ ɪɴғᴏ ✦\n•❅─────✧❅✦❅✧─────❅•\n"
@@ -264,8 +264,8 @@ def info(update: Update, context: CallbackContext):
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
         text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))}</i> {str(userhp['percentage'])}%]" 
-        text += f"\n\n<b>Danger Bar </b>: ☠☠☠☠⚠︎⚠︎⚠︎⚠︎⚠︎⚠︎ <b><i> 30/100</b></i> "
-                 
+        text = f"<b>Danger Bar </b>: ☠☠☠☠⚠︎⚠︎⚠︎⚠︎⚠︎⚠︎ <b>30/100</b>"
+    
     disaster_level_present = True
 
     if user.id == OWNER_ID:
@@ -288,7 +288,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' \n[<a href="https://t.me/Kakashiinfo/3">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
+        text += ' \n[<a href="https://t.me/LovelyXAssociation/16">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
             bot.username
         )
 

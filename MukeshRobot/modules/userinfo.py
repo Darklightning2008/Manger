@@ -238,7 +238,7 @@ def info(update: Update, context: CallbackContext):
         f"ㅤ ㅤㅤ      ✦ ᴜsᴇʀ ɪɴғᴏ ✦\n•❅─────✧❅✦❅✧─────❅•\n"
         f"➻ <b>ᴜsᴇʀ ɪᴅ:</b> <code>{user.id}</code>\n"
         f"➻ <b>ғɪʀsᴛ ɴᴀᴍᴇ:</b> {html.escape(user.first_name)}"
-        f"<b>Danger level: ⚠️⚠️⚠️⚠️⚠⚠⚠⚠⚠⚠ </b>"
+        
     )
     
 
@@ -263,7 +263,8 @@ def info(update: Update, context: CallbackContext):
                 text += _stext.format("ᴀᴅᴍɪɴ")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
+        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]", 
+                f"<b>Danger Bar </b>: ☠☠☠☠⚠︎⚠︎⚠︎⚠︎⚠︎⚠︎ <b><i> 30/100</b></i> "
 
     disaster_level_present = False
 

@@ -1,14 +1,14 @@
 {
-      "name": "Mukesh Robot",
+      "name": "Kakashi Hatake",
       "description": "Telegram Group Management Bot.",
-      "logo": "https://te.legra.ph/file/49c43e6fc856534a09853.jpg",
+      "logo": "https://te.legra.ph/file/05506d7dc6c995426b93d.jpg",
       "keywords": [
          "telegram",
          "modular",
          "group",
          "manager"
       ],   
-   "repository": "https://github.com/Noob-Mukesh/MukeshRobot",
+   "repository": "https://github.com/Darklightning2008/Manger",
    "stack": "heroku-22",
    "addons": [
       {

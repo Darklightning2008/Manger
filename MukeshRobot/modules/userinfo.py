@@ -238,7 +238,7 @@ def info(update: Update, context: CallbackContext):
         f"ㅤ ㅤㅤ      ✦ ᴜsᴇʀ ɪɴғᴏ ✦\n•❅─────✧❅✦❅✧─────❅•\n"
         f"➻ <b>ᴜsᴇʀ ɪᴅ:</b> <code>{user.id}</code>\n"
         f"➻ <b>ғɪʀsᴛ ɴᴀᴍᴇ:</b> {html.escape(user.first_name)}"
-        f""
+        f"<b>Danger level: ⚠️⚠️⚠️⚠️⚠⚠⚠⚠⚠⚠ </b>"
     )
     
 

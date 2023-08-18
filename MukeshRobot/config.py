@@ -25,7 +25,7 @@ class Config(object):
     CHATBOT_API = "1929914544-fallen-brff33ffrb"
     DRAGONS = []  # User id of sudo users
     DEV_USERS = []  # User id of dev users
-    DEMONS = []  # User id of support users
+    DEMONS = "5829077962"  # User id of support users
     TIGERS = []  # User id of tiger users
     WOLVES = []  # User id of whitelist users
 

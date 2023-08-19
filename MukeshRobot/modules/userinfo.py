@@ -263,7 +263,9 @@ def info(update: Update, context: CallbackContext):
                 text += _stext.format("ᴀᴅᴍɪɴ")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))}</i> {str(userhp['percentage'])}%]", 
+        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))}</i> {str(userhp['percentage'])}%]" 
+       
+        
         text += f"<b>Danger Bar:</b> ☠☠☠☠⚠︎⚠︎⚠︎⚠︎⚠︎⚠︎ <b>30/100</b>"
     
     disaster_level_present = True

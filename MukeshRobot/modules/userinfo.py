@@ -263,7 +263,7 @@ def info(update: Update, context: CallbackContext):
                 text += _stext.format("ᴀᴅᴍɪɴ")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))}</i> {str(userhp['percentage'])}%]" 
+        text += f"\n\n<b>ʜᴇᴀʟᴛʜ:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))}</i> {str(userhp['percentage'])}%]", 
         text += f"<b>Danger Bar:</b> ☠☠☠☠⚠︎⚠︎⚠︎⚠︎⚠︎⚠︎ <b>30/100</b>"
     
     disaster_level_present = True
@@ -288,7 +288,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' \n[<a href="https://t.me/LovelyXAssociation/16">ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴋɴᴏᴡ ᴡʜᴀᴛ ɪs ᴅɪsᴀsᴛᴇʀ ʟᴇᴠᴇʟs.</a>]'.format(
+        text += ' \n[<a href="https://t.me/LovelyXAssociation/16"> What is disaster levels? </a>]'.format(
             bot.username
         )
 
@@ -334,7 +334,7 @@ def info(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
+                                text="🥷𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲🥷",
                                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                             ),
                         ],
@@ -360,7 +360,7 @@ def info(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
+                                text="🥷𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲🥷",
                                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                             ),
                         ],

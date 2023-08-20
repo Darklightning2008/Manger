@@ -5,9 +5,9 @@ from datetime import datetime
 from telegram import version as ptb
 from telethon import Button
 
-from DazaiRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT
-from DazaiRobot import telethn as Horix
-from DazaiRobot.events import register
+from MukeshRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT
+from MukeshRobot import telethn as Horix
+from MukeshRobot.events import register
 
 edit_time = 5
 """ =======================Horix====================== """

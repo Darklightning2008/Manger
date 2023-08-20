@@ -16,6 +16,9 @@ PHOTO = [
     "https://telegra.ph/file/13a0cbbff8f429e2c59ee.jpg",
     "https://telegra.ph/file/bdfd86195221e979e6b20.jpg",
 ]
+GIF_ID =[
+        "CgACAgUAAx0Cc6P3UQACA9Bk4Xity-rDQgFbOW_QnuP_c8KzCwACbQsAAiIGEVfBwSVBH4zqZDAE"
+]
 
 Mukesh = [
     [
@@ -50,8 +53,8 @@ async def restart(client, m: Message):
     )
     await umm.delete()
     await asyncio.sleep(0.2)
-    await m.reply_gif(
-        "CgACAgUAAx0Cc6P3UQACA9Bk4Xity-rDQgFbOW_QnuP_c8KzCwACbQsAAiIGEVfBwSVBH4zqZDAE",
+    await m.reply_photo(
+        START_IMG,GIF_ID, 
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴏᴡɴᴇʀ](tg://user?id={OWNER_ID})

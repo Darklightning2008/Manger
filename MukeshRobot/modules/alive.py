@@ -50,19 +50,13 @@ async def restart(client, m: Message):
     )
     await umm.delete()
     await asyncio.sleep(0.2)
-    await m.reply_photo(
-        START_IMG,
+    await m.reply_gif(
+        "CgACAgUAAx0Cc6P3UQACA9Bk4Xity-rDQgFbOW_QnuP_c8KzCwACbQsAAiIGEVfBwSVBH4zqZDAE",
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴏᴡɴᴇʀ](tg://user?id={OWNER_ID})
-  
-  » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
-  
-  » **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
-  
-  » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
-  
-  » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
+  » Me,I am working fine as a gun. 
+  » My uptime:{uptime}
    ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )

@@ -11,10 +11,10 @@ from DazaiRobot.events import register
 
 edit_time = 5
 """ =======================Horix====================== """
-file1 = ""
-file2 = ""
-file3 = ""
-file4 = "https://te.legra.ph/file/0f896bb54001928a5643b.jpg"
+file1 = "https://te.legra.ph/file/32771ecbd2af9e9324ed8.jpg"
+file2 = "https://te.legra.ph/file/0d0c98eed727f8eda15d5.jpg"
+file3 = "https://te.legra.ph/file/ea65bde3ba6a90f876616.jpg"
+file4 = "https://te.legra.ph/file/e21a1df23fa4d61af7eef.jpg"
 """ =======================Horix====================== """
 
 START_TIME = datetime.utcnow()
@@ -50,8 +50,8 @@ async def hmm(yes):
     HoriX += f"𝖬𝗒 master: [Speedy](tg://user?id=1929914544)"
     BUTTON = [
         [
-            Button.url("ʜᴇʟᴘ ❓", f"https://t.me/{BOT_USERNAME}?start=help"),
-            Button.url("sᴜᴘᴘᴏʀᴛ ♻️", f"https://t.me/{SUPPORT_CHAT}"),
+            Button.url("Ninja🥷", f"https://t.me/{BOT_USERNAME}?start=help"),
+            Button.url("Village🏠", f"https://t.me/{SUPPORT_CHAT}"),
         ]
     ]
     await Horix.send_file(yes.chat_id, file="https://te.legra.ph/file/1b64fa56ab755969ec9a2.mp4",caption=HoriX, buttons=BUTTON)

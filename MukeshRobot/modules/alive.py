@@ -1,68 +1,59 @@
 import asyncio
-from platform import python_version as pyver
+import datetime
+from datetime import datetime
 
-from pyrogram import __version__ as pver
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from telegram import __version__ as lver
-from telethon import __version__ as tver
+from telegram import version as ptb
+from telethon import Button
 
-from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID,BOT_NAME,START_IMG
+from DazaiRobot import BOT_NAME, BOT_USERNAME, SUPPORT_CHAT
+from DazaiRobot import telethn as Horix
+from DazaiRobot.events import register
 
-PHOTO = [
-    "https://telegra.ph/file/d2a23fbe48129a7957887.jpg",
-    "https://telegra.ph/file/ddf30888de58d77911ee1.jpg",
-    "https://telegra.ph/file/268d66cad42dc92ec65ca.jpg",
-    "https://telegra.ph/file/13a0cbbff8f429e2c59ee.jpg",
-    "https://telegra.ph/file/bdfd86195221e979e6b20.jpg",
-]
-GIF_ID =[
-        "CgACAgUAAx0Cc6P3UQACA9Bk4Xity-rDQgFbOW_QnuP_c8KzCwACbQsAAiIGEVfBwSVBH4zqZDAE"
-]
+edit_time = 5
+""" =======================Horix====================== """
+file1 = ""
+file2 = ""
+file3 = ""
+file4 = "https://te.legra.ph/file/0f896bb54001928a5643b.jpg"
+""" =======================Horix====================== """
 
-Mukesh = [
-    [
-        InlineKeyboardButton(text="ɴᴏᴏʙ", user_id=OWNER_ID),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="🥷𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲🥷",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        ),
-    ],
-]
+START_TIME = datetime.utcnow()
+START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
+TIME_DURATION_UNITS = (
+    ("week", 60 * 60 * 24 * 7),
+    ("day", 60 * 60 * 24),
+    ("hour", 60 * 60),
+    ("min", 60),
+    ("sec", 1),
+)
 
 
+async def _human_time_duration(seconds):
+    if seconds == 0:
+        return "inf"
+    parts = []
+    for unit, div in TIME_DURATION_UNITS:
+        amount, seconds = divmod(int(seconds), div)
+        if amount > 0:
+            parts.append(f'{amount} {unit}{"" if amount == 1 else "s"}')
+    return ", ".join(parts)
 
-@pbot.on_message(filters.command("alive"))
-async def restart(client, m: Message):
-    await m.delete()
-    accha = await m.reply("⚡")
-    await asyncio.sleep(0.2)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
-    await asyncio.sleep(0.1)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ......")
-    await asyncio.sleep(0.1)
-    await accha.edit("ᴅɪɴɢ ᴅᴏɴɢ ꨄ︎ ᴀʟɪᴠɪɴɢ..")
 
-    await accha.delete()
-    await asyncio.sleep(0.3)
-    umm = await m.reply_sticker(
-        "CAACAgUAAx0CbwIllwACKIBk4Xy2WIfxwWoeKhKM6P0M1KTXvQACIwkAAuWAeVVBWKnc-78DkzAE"
-    )
-    umm = await m.reply_gif(
-        "CgACAgUAAx0Cc6P3UQACA9Bk4Xity-rDQgFbOW_QnuP_c8KzCwACbQsAAiIGEVfBwSVBH4zqZDAE"
-    ) 
-    await umm.delete()
-    await asyncio.sleep(0.2)
-    await m.reply_photo(
-        START_IMG, 
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
-   ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴏᴡɴᴇʀ](tg://user?id={OWNER_ID})
-  » Mᴇ, I ᴀᴍ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ ᴀs ᴀ ɢᴜɴ. 
-  No problem. 
-   ━━━━━━━━━━━━━━━━━━━""",
-        reply_markup=InlineKeyboardMarkup(Mukesh),
-    )
+@register(pattern=("/alive"))
+async def hmm(yes):
+    await yes.get_chat()
+    current_time = datetime.utcnow()
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))
+    HoriX = f"🥷 𝖨'𝗆 𝗐𝗈𝗋𝗄𝗂𝗇𝗀 𝗉𝖾𝗋𝖿𝖾𝖼𝗍𝗅𝗒 fine as a gun\n\n"
+    HoriX += f"𝖬𝗒 𝗎𝗉𝗍𝗂𝗆𝖾: {uptime}\n\n"
+    HoriX += f"𝖬𝗒 master: [Speedy](tg://user?id=1929914544)"
+    BUTTON = [
+        [
+            Button.url("ʜᴇʟᴘ ❓", f"https://t.me/{BOT_USERNAME}?start=help"),
+            Button.url("sᴜᴘᴘᴏʀᴛ ♻️", f"https://t.me/{SUPPORT_CHAT}"),
+        ]
+    ]
+    await Horix.send_file(yes.chat_id, file="https://te.legra.ph/file/1b64fa56ab755969ec9a2.mp4",caption=HoriX, buttons=BUTTON)
+    
+mod_name = "𝙰ʟɪᴠᴇ"

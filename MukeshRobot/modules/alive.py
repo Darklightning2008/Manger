@@ -61,8 +61,8 @@ async def restart(client, m: Message):
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴏᴡɴᴇʀ](tg://user?id={OWNER_ID})
-  » Mᴇ, I ᴀᴍ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ ᴀs ᴀ ɢᴜɴ
-  » Mʏ ᴜᴘᴛɪᴍᴇ:{uptime}
+  » Mᴇ, I ᴀᴍ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ ᴀs ᴀ ɢᴜɴ. 
+  No problem. 
    ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )

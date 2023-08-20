@@ -13,7 +13,7 @@ async def handwrite(_, message: Message):
         m = await mukesh.send_message(
             message.chat.id, "`Please wait...,\n\nWriting your text...`"
         )
-        API = f"https://api.safone.me/write?text={text}&page=Notepad&font=Caviet&color=Blue"
+        API = f"curl -X GET "http://api.safone.me/write?text={text}&page=Notepad&font=Caviet&color=Blue" -H "accept: application/json""
         req = requests.get(API).url
         caption = f"""
 sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘

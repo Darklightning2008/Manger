@@ -36,7 +36,7 @@ sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
         m = await mukesh.send_message(
             message.chat.id, "`Please wait...,\n\nWriting your text...`"
         )
-        API = f"https://api.sdbots.tk/write?text={lol}"
+        API = f"https://api.safone.me/write?text={text}&page=Notepad&font=Caviet&color=Blue"
         req = requests.get(API).url
         caption = f"""
 sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘

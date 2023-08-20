@@ -49,12 +49,15 @@ async def restart(client, m: Message):
     await accha.delete()
     await asyncio.sleep(0.3)
     umm = await m.reply_sticker(
-        "CAACAgUAAxkDAAJHbmLuy2NEfrfh6lZSohacEGrVjd5wAAIOBAACl42QVKnra4sdzC_uKQQ"
+        "CAACAgUAAx0CbwIllwACKIBk4Xy2WIfxwWoeKhKM6P0M1KTXvQACIwkAAuWAeVVBWKnc-78DkzAE"
     )
+    umm = await m.reply_gif(
+        "CgACAgUAAx0Cc6P3UQACA9Bk4Xity-rDQgFbOW_QnuP_c8KzCwACbQsAAiIGEVfBwSVBH4zqZDAE"
+    ) 
     await umm.delete()
     await asyncio.sleep(0.2)
     await m.reply_photo(
-        START_IMG,GIF_ID, 
+        START_IMG, 
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[{BOT_NAME}](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
   » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴏᴡɴᴇʀ](tg://user?id={OWNER_ID})

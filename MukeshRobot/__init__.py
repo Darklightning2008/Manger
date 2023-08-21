@@ -177,7 +177,19 @@ from MukeshRobot.modules.helper_funcs.handlers import (
     CustomMessageHandler,
     CustomRegexHandler,
 )
+app = Client(
+    "MukeshRobot",
+    config.API_ID,
+    config.API_HASH,
+    bot_token=config.BOT_TOKEN,
+)
 
+app2 = Client(
+    "MukeshRobot",
+    api_id=config.API_ID,
+    api_hash=config.API_HASH,
+    session_string=str(config.SESSION),
+)
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler

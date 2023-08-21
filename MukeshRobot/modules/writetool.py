@@ -1,60 +1,24 @@
-import requests
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-
 from MukeshRobot import BOT_NAME, BOT_USERNAME
 from MukeshRobot import pbot as mukesh
-
-
+import requests
 @mukesh.on_message(filters.command("write"))
 async def handwrite(_, message: Message):
-    if not message.reply_to_message:
-        text = message.text.split(None, 1)[1]
-        m = await mukesh.send_message(
-            message.chat.id, "`Please wait...,\n\nWriting your text...`"
-        )
-        API = f"curl -X GET "http://api.safone.me/write?text={text}&page=Notepad&font=Caviet&color=Blue" -H "accept: application/json""
-        req = requests.get(API).url
-        caption = f"""
-sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
-
-✨ **ᴡʀɪᴛᴛᴇɴ ʙʏ :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
-🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}
-❄ **ʟɪɴᴋ :** `{req}`
-"""
-        await m.delete()
-        await mukesh.send_photo(
-            message.chat.id,
-            photo=req,
-            caption=caption,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴛᴇʟᴇɢʀᴀᴩʜ •", url=f"{req}")]]
-            ),
-        )
+    if message.reply_to_message:
+        text = message.reply_to_message.text
     else:
-        lol = message.reply_to_message.text
-        m = await mukesh.send_message(
-            message.chat.id, "`Please wait...,\n\nWriting your text...`"
-        )
-        API = f"https://api.safone.me/write?text={text}&page=Notepad&font=Caviet&color=Blue"
-        req = requests.get(API).url
-        caption = f"""
-sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
+        text =message.text.split(None, 1)[1]
+    m =await message.reply_text( "`Please wait...,\n\nWriting your text...`")
+    write = requests.get(f"https://apis.xditya.me/write?text={text}").url
 
+    caption = f"""
+sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
 ✨ **ᴡʀɪᴛᴛᴇɴ ʙʏ :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}
-❄ **ʟɪɴᴋ :** `{req}`
 """
-        await m.delete()
-        await mukesh.send_photo(
-            message.chat.id,
-            photo=req,
-            caption=caption,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴛᴇʟᴇɢʀᴀᴩʜ •", url=f"{req}")]]
-            ),
-        )
-
+    await m.delete()
+    await message.reply_photo(photo=write,caption=caption)
 
 __mod_name__ = "WʀɪᴛᴇTᴏᴏʟ"
 

@@ -5,7 +5,7 @@ import time
 import ast
 import base64
 import MukeshRobot
-from MukeshRobot import config 
+from MukeshRobot import config,Config
 import telegram.ext as tg
 from  aiohttp import ClientSession 
 from pyrogram import Client, errors

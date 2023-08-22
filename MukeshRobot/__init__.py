@@ -6,7 +6,7 @@ import ast
 import base64
 
 from MukeshRobot import config 
-
+from config import Config
 import telegram.ext as tg
 from  aiohttp import ClientSession 
 from pyrogram import Client, errors

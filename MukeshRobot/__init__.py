@@ -31,7 +31,8 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     quit(1)
 
 
-
+#app 
+app = MukeshRobot()
 
 
 

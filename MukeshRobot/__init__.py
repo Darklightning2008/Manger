@@ -33,6 +33,25 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     )
     quit(1)
 
+
+)
+app = Client(
+    "MukeshRobot",
+    Config.API_ID,
+    Config.API_HASH,
+    bot_token=Config.BOT_TOKEN,
+)
+
+app2 = Client(
+    "MukeshRobot",
+    api_id=Config.API_ID,
+    api_hashConfig.API_HASH,
+    session_string=str(Config.SESSION),
+)
+
+
+
+
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
@@ -178,20 +197,11 @@ from MukeshRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
-)
-app = Client(
-    "MukeshRobot",
-    Config.API_ID,
-    Config.API_HASH,
-    bot_token=Config.BOT_TOKEN,
-)
 
-app2 = Client(
-    "MukeshRobot",
-    api_id=Config.API_ID,
-    api_hashConfig.API_HASH,
-    session_string=str(Config.SESSION),
-)
+
+
+
+
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
 tg.CommandHandler = CustomCommandHandler

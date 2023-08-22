@@ -4,8 +4,6 @@ import sys
 import time
 import ast
 import base64
-import MukeshRobot
-from MukeshRobot import config
 import telegram.ext as tg
 from  aiohttp import ClientSession 
 from pyrogram import Client, errors
@@ -36,16 +34,16 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 
 app = Client(
     "MukeshRobot",
-    MukeshRobot.config.API_ID,
-    MukeshRobot.config.API_HASH,
-    bot_token=MukeshRobot.config.BOT_TOKEN,
+    API_ID=22839370,
+    API_HASH="7fb99db07ddecec3e7a1f02da9730c33",
+    BOT_TOKEN="6287631826:AAH7NyVTHvZH3L7Pj-oV1Vt3BeRgkMPRUD0",
 )
 
 app2 = Client(
     "MukeshRobot",
-    api_id=MukeshRobot.config.API_ID,
-    api_hash=MukeshRobot.config.API_HASH,
-    session_string=str(MukeshRobot.config.SESSION),
+    api_id=22839370,
+    api_hash="7fb99db07ddecec3e7a1f02da9730c33",
+    session_string=str("BQArz2uKal5QtRmxtlSRokb2iGQ1g8LFKGhYe-sh_Eqb8Z_lCxyT1YMc5Rj8wftbp3kQxauyTM4D46KwMXsdRBelE8Gq5g5Dk0b799JlIOBw1YhR16aYUS_8i_vrBhrx0skdiUZoE13GZQ7SvjMPfPieen9tiEkgyJLyIsTRZF3cTDXTT64wvQ4dqs8UVOqkaG_-1sZRKB8nK4-OQuBkDWJ0ATsuzxNXElcuZ00aoYi28o8AIl7lJL00E3wlpmY9RU2nWp3mXrbfesre8C-rDPwWZHlnQIyJylmLj7cYHAE3y83rJ6Q6jYvAXnuWDBEAdn6zzD1Vq6kJtXKaOVKRdlRFcwgosAA"),
 )
 
 

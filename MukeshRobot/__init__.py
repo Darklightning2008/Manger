@@ -45,7 +45,7 @@ app = Client(
 app2 = Client(
     "MukeshRobot",
     api_id=Config.API_ID,
-    api_hashConfig.API_HASH,
+    api_hash=Config.API_HASH,
     session_string=str(Config.SESSION),
 )
 

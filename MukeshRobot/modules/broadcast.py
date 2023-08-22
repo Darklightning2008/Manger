@@ -4,8 +4,9 @@ from pyrogram.types import Message
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 import os, sys, time, asyncio, logging, datetime
- @Client.on_message(filters.command("broadcast") & filters.user(Config.ADMIN) & filters.reply)
-async def broadcast_handler(bot: Client, m: Message):
+
+@Client.on_message(filters.command("broadcast") & filters.user(Config.ADMIN) & filters.reply)
+async def broadcast_handler(bot:Client,m:Message):
     await bot.send_message(Config.LOG_CHANNEL, f"{m.from_user.mention} or {m.from_user.id} Iꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ Bʀᴏᴀᴅᴄᴀꜱᴛ......")
     all_users = await db.get_all_users()
     broadcast_msg = m.reply_to_message

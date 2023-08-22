@@ -49,4 +49,8 @@ async def send_msg(user_id, message):
         logger.error(f"{user_id} : {e}")
         return 500
  
+__help__ = """
+Broadcast messages (admins only) 
 
+ ❍ /Broadcast *:* Broadcast! """
+__mod_name__ = "Broadcast"

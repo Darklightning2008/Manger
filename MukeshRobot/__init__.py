@@ -6,7 +6,8 @@ import ast
 import base64
 
 from MukeshRobot import config 
- 
+from config import Config
+from config import API_ID, API_HASH, BOT_TOKEN, SESSION
 
 import telegram.ext as tg
 from  aiohttp import ClientSession 

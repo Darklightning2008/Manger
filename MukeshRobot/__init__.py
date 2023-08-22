@@ -37,16 +37,16 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 
 app = Client(
     "MukeshRobot",
-    Config.API_ID,
-    Config.API_HASH,
-    bot_token=Config.BOT_TOKEN,
+    config.API_ID,
+    config.API_HASH,
+    bot_token=config.BOT_TOKEN,
 )
 
 app2 = Client(
     "MukeshRobot",
-    api_id=Config.API_ID,
-    api_hash=Config.API_HASH,
-    session_string=str(Config.SESSION),
+    api_id=config.API_ID,
+    api_hash=config.API_HASH,
+    session_string=str(config.SESSION),
 )
 
 

@@ -5,7 +5,7 @@ import time
 import ast
 import base64
 import MukeshRobot
-from MukeshRobot import config.py as config
+from MukeshRobot import config 
 from config import Config
 import telegram.ext as tg
 from  aiohttp import ClientSession 

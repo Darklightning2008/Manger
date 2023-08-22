@@ -6,8 +6,6 @@ import ast
 import base64
 
 from MukeshRobot import config 
-from MukeshRobot import Config
-from Config import API_ID, API_HASH, BOT_TOKEN, SESSION
 
 import telegram.ext as tg
 from  aiohttp import ClientSession 
@@ -183,16 +181,16 @@ from MukeshRobot.modules.helper_funcs.handlers import (
 )
 app = Client(
     "MukeshRobot",
-    config.API_ID,
-    config.API_HASH,
-    bot_token=config.BOT_TOKEN,
+    Config.API_ID,
+    Config.API_HASH,
+    bot_token=Config.BOT_TOKEN,
 )
 
 app2 = Client(
     "MukeshRobot",
-    api_id=config.API_ID,
-    api_hash=config.API_HASH,
-    session_string=str(config.SESSION),
+    api_id=Config.API_ID,
+    api_hashConfig.API_HASH,
+    session_string=str(Config.SESSION),
 )
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler

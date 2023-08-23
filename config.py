@@ -11,6 +11,7 @@ class Config(object):
     OWNER_ID = 1929914544 # If you dont know, run the bot and do /id in your private chat with it, also an integer
     SUPPORT_CHAT = "LovelyXSupport"  # Your own group for support, do not add the @
     START_IMG = "https://te.legra.ph/file/59d555afd67ff0d9bd224.mp4"
+    ADMIN = 1929914544
     PM_IMG = ""
     EVENT_LOGS = ()  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     MONGO_DB_URI= ""

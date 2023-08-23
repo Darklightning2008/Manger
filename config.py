@@ -20,6 +20,9 @@ class Config(object):
         "NGJS76JQ28V2LRPF"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
     TIME_API_KEY = "5LB4TAKPEKZ0"  # Get your API key from https://timezonedb.com/api
+    #Database 
+    DB_URL ="mongodb+srv://DarkLightning2008:Darkdeebu2008@cluster1.ut0l8mm.mongodb.net/?retryWrites=true&w=majority"
+    DB_NAME = "Cluster1"
 
     # Optional fields
     BL_CHATS = []  # List of groups that you want blacklisted.

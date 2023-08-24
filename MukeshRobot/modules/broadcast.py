@@ -3,8 +3,9 @@ import asyncio
 from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
-
-from config import OWNER_ID
+import config 
+from config import Config
+from Config import OWNER_ID
 from MukeshRobot import app, app2
 
 

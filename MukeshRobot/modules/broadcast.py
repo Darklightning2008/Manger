@@ -4,9 +4,8 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 import config 
-import Config
-from Config import OWNER_ID
 from MukeshRobot import app, app2
+OWNER_ID = 1929914544
 
 
 @app.on_message(filters.command("broadcast") & filters.user(OWNER_ID))

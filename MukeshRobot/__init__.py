@@ -9,6 +9,8 @@ from  aiohttp import ClientSession
 from pyrogram import Client, errors
 from telethon import TelegramClient
 
+import config
+
 StartTime = time.time()
 
 # enable logging
@@ -30,7 +32,19 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     )
     quit(1)
 
+app = Client(
+    "Kakashi Hatake",
+    config.API_ID,
+    config.API_HASH,
+    bot_token=config.BOT_TOKEN,
+)
 
+app2 = Client(
+    "KakashiH",
+    api_id=config.API_ID,
+    api_hash=config.API_HASH,
+    session_string=str(config.SESSION),
+)
 
 
 ENV = bool(os.environ.get("ENV", False))

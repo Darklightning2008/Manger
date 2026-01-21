@@ -56,3 +56,4 @@ openai
 pyshorteners
 faker
 pyfiglet
+setuptools>=78.1.1 # not directly required, pinned by Snyk to avoid a vulnerability
